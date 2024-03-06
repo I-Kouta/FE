@@ -5,4 +5,6 @@
 ファイル作成  
 first commit
 
-<img width="500" alt="" src="./images/情報処理技術資格.png">
+<img width="500" alt="" src="./images/セキュリティ資格分類.png">
+
+<img width="500" alt="" src="./images/情報処理技術者資格.png">
