@@ -389,3 +389,10 @@ sort(1, 5)なので、pivot = 3, i = 1, j = 5
 
 ・i >= jなので、while(true)の繰り返し処理が終了し、αの処理が行われる  
 この時点でdata = {2, 1, 3, 5, 4}と初期値と同じで、先頭から順に出力する
+
+---
+4.次の記述中の正しい答えを選択。配列の要素番号は1から始まる  
+関数addは、引数で指定された正の整数valueを大域の整数型の配列hashArrayに格納する。格納できた場合はtrueを返し、格納できなかった場合はfalseを返す。整数valueをhashArrayのどの要素に格納すべきかを、calcHash1及びcalcHash2を利用して決める。  
+手続きtestは、関数addを呼び出して、hashArrayに正の整数を格納する。手続きtestの処理が終了した直後のhashArrayの内容はいくらか
+
+<img width="300" alt="" src="./images/ハッシュ表.png">
