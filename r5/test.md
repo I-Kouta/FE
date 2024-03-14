@@ -373,6 +373,8 @@ divideFlagがfalseになった場合、後続のif文で変数iの値が配列pn
 
 <img width="400" alt="" src="./images/ソート.png">
 
+- A.**{2, 1, 3, 5, 4}**
+
 sort(1, 5)なので、pivot = 3, i = 1, j = 5
 
 ・data[i]がpivotより小さい間、jから1を加えることを繰り返す  
