@@ -396,3 +396,25 @@ sort(1, 5)なので、pivot = 3, i = 1, j = 5
 手続きtestは、関数addを呼び出して、hashArrayに正の整数を格納する。手続きtestの処理が終了した直後のhashArrayの内容はいくらか
 
 <img width="300" alt="" src="./images/ハッシュ表.png">
+
+- A.**{-1, 18, -1, 3, 11}**
+
+手続きtestの最初で。配列hashArrayは{-1, -1, -1, -1, -1}に初期化されている。3回の関数addでは、以下のように値が格納される。  
+・add(3)  
+1.i ← calcHash1(3)が実行される  
+2.value = 3、hashArrayの要素数が5なので、calcHash1(3)は、3 / 5の余りに1を加えた値、4を返す  
+3.hashArray[4] = -1なので、3を格納して終了
+
+・add(18)  
+1.i ← calcHash1(18)が実行される  
+2.value = 18、hashArrayの要素数が5なので、calcHash1(3)は、18 / 5の余りに1を加えた値、4を返す  
+3.hashArray[4] != -1なので、else文に飛び、i ← calcHash2(18)が実行される  
+4.value + 3 = 21、hashArrayの要素数が5なので、calcHash2(18)は21 / 5の余りに1を加えた数、2を返す  
+5.hashArray[2] = -1なので、18を格納して終了
+
+・add(11)  
+1.i ← calcHash1(11)が実行される  
+2.value = 11、hashArrayの要素数が5なので、calcHash1(11)は、11 / 5の余りに1を加えた値、2を返す  
+3.hashArray[2] != -1なので、else文に飛び、i ← calcHash2(11)が実行される  
+4.value + 3 = 14、hashArrayの要素数が5なので、calcHash2(11)は14 / 5の余りに1を加えた数、5を返す  
+5.hashArray[5] = -1なので、11を格納して終了
