@@ -1308,3 +1308,30 @@ low = 1、high = 2としてwhile文が開始される。middleは1。data[1]が�
 
 - 要素に-1が含まれている  
 無限ループになることはない
+
+---
+14.正しい答えを選択。配列の要素番号は1から始まる  
+要素数が1以上で、昇順に整列済みの配列を基に、配列を特徴づける5つの値を返すプログラムである。  
+関数summarizeをsummarize({0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1}) として呼び出すと戻り値はいくつか
+
+<img width="500" alt="" src="./images/特徴値.png">
+
+- A.**{0.1, 0.4, 0.6, 0.8, 1}**
+
+関数`summarize`ではfor文を使って配列pの要素1つずつに対してサブルーチンである関数`findRank`を呼び出し、その結果を戻り値の配列である`rankData`に追加する。  
+配列pは{0, 0.25, 0.5, 0.75, 1}なので、`rankData`には、5つの結果が格納されることになる。`sortedData`の要素数は10なので、関数`findRank`内で使われている「`sortedData`の要素数 - 1」は9  
+・findRank(sortedData, p[1])  
+i ← (0 * 9) = 0を切り上げた値 => 0  
+return sortedData[1] = **0.1**<br><br>
+・findRank(sortedData, p[2])  
+i ← (0.25 * 9) = 2.25を切り上げた値 => 3  
+return sortedData[4] = **0.4**<br><br>
+・findRank(sortedData, p[3])  
+i ← (0.5 * 9) = 4.5を切り上げた値 => 5  
+return sortedData[6] = **0.6**<br><br>
+・findRank(sortedData, p[4])  
+i ← (0.75 * 9) = 6.75を切り上げた値 => 7  
+return sortedData[8] = **0.8**<br><br>
+・findRank(sortedData, p[5])  
+i ← (1 * 9) = 9を切り上げた値 => 9  
+return sortedData[10] = **1**<br><br>
