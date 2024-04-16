@@ -1608,52 +1608,48 @@ else文はリスト内に要素が1つ以上存在するときの処理で、「
 - A.**c : 3, 2, 2, 1, 2, 3, 1**
 
 引数`matrix`は5つの配列を要素として保持する二次元配列
-> * matrix = {
->   * 1 : {3, 0, 0, 0, 0},
->   * 2 : {0, 2, 2, 0, 0},
->   * 3 : {0, 0, 0, 1, 3},
->   * 4 : {0, 0, 0, 2, 0},
->   * 5 : {0, 0, 0, 0, 1}
-> * }
+* matrix = {
+  * 1 : {3, 0, 0, 0, 0},
+  * 2 : {0, 2, 2, 0, 0},
+  * 3 : {0, 0, 0, 1, 3},
+  * 4 : {0, 0, 0, 2, 0},
+  * 5 : {0, 0, 0, 0, 1}
+* }
 
 この配列を引数としてプログラムを呼び出すと、以下のように処理される  
 `sparseMatrix ← {{}, {}, {}}`  
 `matrix[1] = {3, 0, 0, 0, 0}`の要素を1つずつ(matrix[1, j])を見て、値が0でなければ以下を行う  
 ・`sparseMatrix[1]`の末尾にiの値を追加する  
 ・`sparseMatrix[2]`の末尾にjの値を追加する  
-・`sparseMatrix[3]`の末尾にmatrix[i, j]の値を追加する
-> matrix[1]のうち0でないのは1番目の要素のみなので、i, j, matrix[1, j]の値をそれぞれ配列`sparseMatrix`に追加する  
-> `sparseMatrix[1]`にi = 1を追加 => {1}  
-> `sparseMatrix[2]`にj = 1を追加 => {1}  
-> `sparseMatrix[3]`にmatrix[1, 1] = 3を追加 => {3}
-
-> matrix[2]のうち0でない2, 3番目の要素をi, j, matrix[2, j]をそれぞれ配列`sparseMatrix`に追加する  
-> `sparseMatrix[1]`にi = 2を追加 => {1, 2}  
-> `sparseMatrix[2]`にj = 2を追加 => {1, 2}  
-> `sparseMatrix[3]`にi = matrix[2, 2] = 2を追加 => {3, 2}  
-> (j = 3の時の処理)  
-> `sparseMatrix[1]`にi = 2を追加 => {1, 2, 2}  
-> `sparseMatrix[2]`にj = 3を追加 => {1, 2, 3}  
-> `sparseMatrix[3]`にi = matrix[2, 3] = 2を追加 => {3, 2, 2}
-
-> matrix[3]のうち0でない4, 5番目の要素をi, j, matrix[2, j]をそれぞれ配列`sparseMatrix`に追加する  
-> `sparseMatrix[1]`にi = 3を追加 => {1, 2, 2, 3}  
-> `sparseMatrix[2]`にj = 4を追加 => {1, 2, 3, 4}  
-> `sparseMatrix[3]`にi = matrix[3, 4] = 1を追加 => {3, 2, 2, 1}  
-> (j = 5の時の処理)  
-> `sparseMatrix[1]`にi = 3を追加 => {1, 2, 2, 3, 3}  
-> `sparseMatrix[2]`にj = 5を追加 => {1, 2, 3, 4, 5}  
-> `sparseMatrix[3]`にi = matrix[3, 5] = 3を追加 => {3, 2, 2, 1, 3}
-
-> matrix[4]のうち0でない4番目の要素をi, j, matrix[2, j]をそれぞれ配列`sparseMatrix`に追加する  
-> `sparseMatrix[1]`にi = 4を追加 => {1, 2, 2, 3, 3, 4}  
-> `sparseMatrix[2]`にj = 4を追加 => {1, 2, 3, 4, 5, 4}  
-> `sparseMatrix[3]`にi = matrix[3, 5] = 3を追加 => {3, 2, 2, 1, 3, 2}
-
-> matrix[5]のうち0でない5番目の要素をi, j, matrix[2, j]をそれぞれ配列`sparseMatrix`に追加する  
-> `sparseMatrix[1]`にi = 5を追加 => **{1, 2, 2, 3, 3, 4, 5}**  
-> `sparseMatrix[2]`にj = 5を追加 => **{1, 2, 3, 4, 5, 4, 5}**  
-> `sparseMatrix[3]`にi = matrix[5, 5] = 1を追加 => **{3, 2, 2, 1, 3, 2, 1}**
+・`sparseMatrix[3]`の末尾にmatrix[i, j]の値を追加する  
+matrix[1]のうち0でないのは1番目の要素のみなので、i, j, matrix[1, j]の値をそれぞれ配列`sparseMatrix`に追加する  
+`sparseMatrix[1]`にi = 1を追加 => {1}  
+`sparseMatrix[2]`にj = 1を追加 => {1}  
+`sparseMatrix[3]`にmatrix[1, 1] = 3を追加 => {3}<br><br>
+matrix[2]のうち0でない2, 3番目の要素をi, j, matrix[2, j]をそれぞれ配列`sparseMatrix`に追加する  
+`sparseMatrix[1]`にi = 2を追加 => {1, 2}  
+`sparseMatrix[2]`にj = 2を追加 => {1, 2}  
+`sparseMatrix[3]`にi = matrix[2, 2] = 2を追加 => {3, 2}  
+(j = 3の時の処理)  
+`sparseMatrix[1]`にi = 2を追加 => {1, 2, 2}  
+`sparseMatrix[2]`にj = 3を追加 => {1, 2, 3}  
+`sparseMatrix[3]`にi = matrix[2, 3] = 2を追加 => {3, 2, 2}<br><br>
+matrix[3]のうち0でない4, 5番目の要素をi, j, matrix[2, j]をそれぞれ配列`sparseMatrix`に追加する  
+`sparseMatrix[1]`にi = 3を追加 => {1, 2, 2, 3}  
+`sparseMatrix[2]`にj = 4を追加 => {1, 2, 3, 4}  
+`sparseMatrix[3]`にi = matrix[3, 4] = 1を追加 => {3, 2, 2, 1}  
+(j = 5の時の処理)  
+`sparseMatrix[1]`にi = 3を追加 => {1, 2, 2, 3, 3}  
+`sparseMatrix[2]`にj = 5を追加 => {1, 2, 3, 4, 5}  
+`sparseMatrix[3]`にi = matrix[3, 5] = 3を追加 => {3, 2, 2, 1, 3}<br><br>
+matrix[4]のうち0でない4番目の要素をi, j, matrix[2, j]をそれぞれ配列`sparseMatrix`に追加する  
+`sparseMatrix[1]`にi = 4を追加 => {1, 2, 2, 3, 3, 4}  
+`sparseMatrix[2]`にj = 4を追加 => {1, 2, 3, 4, 5, 4}  
+`sparseMatrix[3]`にi = matrix[3, 5] = 3を追加 => {3, 2, 2, 1, 3, 2}<br><br>
+matrix[5]のうち0でない5番目の要素をi, j, matrix[2, j]をそれぞれ配列`sparseMatrix`に追加する  
+`sparseMatrix[1]`にi = 5を追加 => **{1, 2, 2, 3, 3, 4, 5}**  
+`sparseMatrix[2]`にj = 5を追加 => **{1, 2, 3, 4, 5, 4, 5}**  
+`sparseMatrix[3]`にi = matrix[5, 5] = 1を追加 => **{3, 2, 2, 1, 3, 2, 1}**
 
 ---
 5.任意の異なる2文字をc1・c2とするとき、英単語群に含まれる英単語において、c1の次にc2が出現する割合を求めるプログラムである。英単語は英小文字だけから成る。英単語の末尾の文字がc1である場合、その箇所は割合の計算に含めない。図に示す4語の英単語"importance", "inflation", "information", "innovation"から成る英単語群において、c1を"n"、c2を"f"とする。英単語の末尾の文字以外に"n"は5つあり、そのうち次の文字が"f"であるものは2つである。この場合求める割合は`2 / 5 = 0.4`である。c1・c2の並びが一度も出現しない場合、c1の出現回数によらず割合を0と定義する。  
