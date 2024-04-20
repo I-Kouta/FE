@@ -115,3 +115,13 @@ HTMLではスタイル言語にCSS(*Cascading Style Sheets*)が用いられる�
 
 - XMLは、SGMLを基に開発されたHTMLとは異なり、独自の仕様として開発された  
 XMLもHTMLと同様にSGML(*Standard Generalized Markup Language*)をベースに開発された
+
+---
+9.50MIPSの処理装置の平均命令実行時間
+
+- A.**20ナノ秒**  
+MIPS(*million instructions per second*)は、1秒間の命令実行回数を百万単位で表すCPU性能の指標。50MIPSであれば1秒間に5,000万回の命令時を実行できるという意味。1命令当たりの実行時間は、  
+1秒 / 5,000万回(5 * 10の7乗)  
+= 2 * 10の-8乗  
+= 20 * 10の-9乗  
+= 20ナノ秒
