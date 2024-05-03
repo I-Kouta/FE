@@ -313,3 +313,20 @@ FIFO(*First in First out* : 先入れ先出し)の説明
 
 - 主記憶に存在している時間が最も短いページを追い出す  
 LIFO(*Last in First out* : 後入れ先出し)の説明
+
+---
+19.Hadoop(ハドゥープ)の説明
+
+- A.**大規模なデータセットを分散処理するためのソフトウェアライブラリ**  
+大規模なデータの分散処理基盤を提供するソフトウェアライブラリ
+
+ペタバイト級の大規模データの蓄積・処理の分散処理を実現するミドルウェア。Googleが論文として発表した分散処理フレームワーク「*MapReduce*」および分散ファイルシステム「*Google File System*」を基盤技術に、オープンソースとしてJavaで実装したもの。分散ファイルシステムのHDFS(*Hadoop Distributed File System*)と、分散処理のフレームワークである*Hadoop MapReduce*の2つから構成される
+
+- JavaEE仕様に準拠したアプリケーションサーバ  
+WildFlyの説明
+
+- LinuxやWindowsなどの様々なプラットフォーム上で動作するWebサーバ  
+ApacheやNginxなどの説明
+
+- 機能の豊富さが特徴のRDBMS  
+PostgreSQLなどの説明
