@@ -30,3 +30,46 @@
 - 論理和(OR)  
 `00101000`(A)  
 `00001111`(C) => 00101111
+
+---
+2.XとYの否定論理積`X NAND Y`は、`NOT(X AND Y)`として定義される。`X OR Y`をNANDだけで表した論理式
+
+- A. **(X NAND X) NAND (Y NAND Y)**  
+X = Y = 0の場合、  
+`(0 NAND 0) NAND (0 NAND 0)` = **0**  
+X =1, Y = 0の場合、  
+`(1 NAND 1) NAND (0 NAND 0)`  
+= `0 NAND 1` = **1**
+
+`X OR Y` : 論理和。X, Yの**どちらか一方でも1であれば1、全て0なら0**  
+`X NAND Y`, `NOT(X AND Y)` : 1つでも0であれば1、全て1なら0
+
+- `((X NAND Y) NAND X) NAND Y`  
+X = Y = 0の場合、  
+`((0 NAND 0) NAND 0) NAND 0`  
+= `(1 NAND 0) NAND 0`  
+= 1 NAND 0 = **1**  
+X =1, Y = 0の場合、  
+`((1 NAND 0) NAND 1) NAND 0`  
+= `(1 NAND 1) NAND 0`  
+= `0 NAND 0` = **1**
+
+- `(X NAND Y) NAND (X NAND Y)`  
+X = Y = 0の場合、  
+`(0 NAND 0) NAND (0 NAND 0)`  
+= `1 NAND 1` = **0**  
+X =1, Y = 0の場合、  
+`(1 NAND 0) NAND (1 NAND 0)`  
+= `1 NAND 1` = **0**
+
+- `X NAND (Y NAND (X NAND Y))`  
+X = Y = 0の場合、  
+`0 NAND (0 NAND (0 NAND 0))`  
+= `0 NAND (0 NAND 1)`  
+= `0 NAND 1` = **1**  
+X =1, Y = 0の場合、  
+`1 NAND (0 NAND (1 NAND 0))`  
+= `1 NAND (0 NAND 1)`  
+= `1 NAND 1` = **0**
+
+<img width="400" alt="" src="./images/ベン図.png">
