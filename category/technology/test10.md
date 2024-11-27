@@ -711,3 +711,21 @@ TCP / IPネットワーク上でネットワーク上の機器の情報を収集
 
 - SMTP(*Simple Mail Transfer Protocol*)  
 インターネット環境において、クライアントからサーバにメールを送信したり、サーバ間でメールを転送するのに用いられる
+
+---
+### 10.5 ネットワーク応用
+
+---
+1.電子メールで静止画、動画、音声などの様々な情報を送ることができる仕組み
+
+- A.**MIME**(*Multipurpose Internet Mail Extension*)  
+ASCII文字しか使用できないSMTPを利用したメールで、日本語の2バイトコードや画像データを送信するための仕組み
+
+- FTP(*File Transfer Protocol*)  
+ネットワーク上でファイルの転送を行うための通信プロトコル
+
+- POP(*Post Office Protocol*)  
+ユーザがメールサーバから自身のメールを取り出す処理において使用する、メール受信用プロトコル
+
+- TELNET(*Telecommunication Network*)  
+端末からホストコンピュータにログインして遠隔操作を行うためのプロトコル
