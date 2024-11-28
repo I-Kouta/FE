@@ -759,3 +759,18 @@ ASCII文字しか使用できないSMTPを利用したメールで、日本語�
 
 - URL(*Uniform Resource Locator*)  
 インターネット上のリソースを特定するための形式的な記号の並びで、Webサイトの場合はホームページアドレスとも呼ばれる
+
+---
+5.TCP / IPを利用している環境で、電子メールに画像データなどを添付するための規格
+
+- A.**MIME**(*Multipurpose Internet Mail Extension*)  
+アスキー文字(アルファベットと数字)しか使用できないSMTPを利用したメールで、日本語などのマルチバイト文字や画像データなどを送信できるようにする仕組み。アスキー文字以外のデータをbase64などでエンコードすることで、SMTPプロトコル上で送受信できるようにしている
+
+- JPEG(*Joint Photographic Experts Group*)  
+デジタルカメラで撮影したフルカラー静止画などを圧縮するのに一般的な方式で、設定により(非)可逆圧縮方式がある
+
+- MPEG(*Moving Picture Experts Group*)  
+映像データの圧縮方式の1つ
+
+- SMTP(*Simple Mail Transfer Protocol*)  
+インターネット環境で使われる電子メール転送プロトコル
