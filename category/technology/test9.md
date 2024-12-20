@@ -835,3 +835,18 @@ Javaプログラムを実行するJava仮想マシンのこと。それぞれの
 
 - `update 商品 set 商品番号 = null where 商品番号 = "S002"`  
 主キーの商品番号をnull(空値)にはセットできない
+
+---
+40.SQLの構文で正しいもの
+
+- A.**`select 注文日, avg(数量) from 注文明細 group by 注文日`**  
+注文日ごとの数量が出力される
+
+- `select 注文日, avg(数量) from 注文明細`  
+注文日がgroup by句で指定されていない状態で、selectで注文日と集計関数が使用されている
+
+- `select 注文日, avg(sum(数量)) from 注文明細 group by 注文日`  
+avg関数は引数が列名でなければならない
+
+- `select 注文日 from 注文明細 where sum(数量) > 1000 group by 注文日`  
+where句はグループ化前に行を制限するので、集計関数を条件指定に使用はできない
