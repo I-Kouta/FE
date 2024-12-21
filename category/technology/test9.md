@@ -941,12 +941,4 @@ select S_CODE, S_NAME, BU_NAME from BUSHO, SHAIN where `a`
 50.更新不可能なビュー
 
 - A.**ビュー定義に`group by`句が含まれるビュー**  
-
-
-- ビュー定義に`where`句が含まれるビュー  
-
-
-- ビューに対するビュー  
-
-
-- 元の表の主キーを含まないビュー  
+実表に対して実表の行を挿入、更新、削除することができないビューでのこと。集約関数(avg, count, sum, min max)・2つ以上の表の結合・`group by`, `order by`, `model`, `connect by`, `start with`, `distinct`の各句、select構文のリストにコレクション式、(副問合せ)、`with read only`が指定された副問合せでは更新不可能
