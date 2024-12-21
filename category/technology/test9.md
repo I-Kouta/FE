@@ -922,9 +922,20 @@ select S_CODE, S_NAME, BU_NAME from BUSHO, SHAIN where `a`
 2つの表を結合させており、表の結合をしていする、`BU_CODE = S_SHOZOKU`がある。SQL文の結果得られたA表の人の年齢が全員23で、その他にはS_NENREIが23のデータは存在しない
 
 ---
-46.社員表から、職務がプログラマである社員が5人未満の部署の部署コードを探すSQL文はどれか。各列にナル値は含まれていない  
+46.社員表から、職務がプログラマである社員が5人未満の部署の部署コードを探すSQL文はどれか。各列にnull値は含まれていない  
 社員(社員番号, 社員名, 部署コード, 職務)
 
+- A.**`select distinct 部署コード from 社員 S1 where 5 > (select count(S2.社員番号) from 社員 S2 where S1.部署コード = S2.部署コード and S2.職務 = "プログラマ")`**  
+副問合せから返された値が5未満なら主問合せのwhere句は真を返す。所属するプログラマが5人未満の部署コードをもつ行のみが抽出され、中間表からselect句で部署コードを抜き出し、distinct句で重複行を排除する
+
+- `select distinct 部署コード from 社員 S1 where 5 < (select count(S2.社員番号) from 社員 S2 where S1.部署コード = S2.部署コード and S2.職務 <> "プログラマ")`  
+`where <`、`S".職務 <> "プログラマ"`の部分が正解の記述と異なる。プログラマではない社員が5人より多い部署コードを取り出すことになる
+
+- `select distinct 部署コード from 社員 S1 where exists (select * from 社員 S2 where S1.部署コード = S2.部署コード and S2.職務 = "プログラマ") group by S1.部署コード having count(*) < 5`  
+`having count(*) < 5`で、抽出対象を絞っているため、プログラマが5人未満でも所属する社員が5人以上であればその部署は抽出されない。プログラマが0人の部署もexists句が偽を返すため抽出されない
+
+- `select distinct 部署コード from 社員 S1 where S1.部署コード in (select S2.部署コード from 社員 S2 where S1.部署コード = S2.部署コード and S2.職務 = "プログラマ" group by S2.部署コード having count(*) < 5)`  
+プログラマが1人以上5人未満の部署コードは抽出されるが、0人の部署はwhere句の条件に合致せず抽出されない
 
 ---
 50.更新不可能なビュー
