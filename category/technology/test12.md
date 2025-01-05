@@ -275,3 +275,13 @@ COBRA(*Cost estimation, Benchmarking and Risk Assessment*)の説明
 
 - 表の定義やデータ操作などを行う関係DBの操作言語  
 SQLの説明
+
+---
+28.UMLのクラス図において、集約の関係にあるクラス
+
+<img width="400" alt="" src="./images/クラス図2.png">
+
+- A.**クラスAとクラスC**  
+クラス図においてクラス間の関係は下記の通り
+
+<img width="400" alt="" src="./images/クラス関係.png">
