@@ -804,3 +804,18 @@ SET(*Secure Electronic Transactions*)の説明
 
 - プロジェクト管理で使用する進捗管理ツールの提供元の責任者  
 利用関係者に含まれない
+
+---
+EC(*Electronic Commerce*)におけるB to Cに該当するもの
+
+- A.**バーチャルモール**  
+アマゾンや楽天などの複数の電子商店が集まったWebサイトのこと
+
+- CALS(*Computer Aided Logistics Support*)  
+製品情報をDBで一元管理し共有することで、製品のコスト削減や生産性向上を図ることを目指す概念を表す
+
+- Web - EDI(*Web Electronic Data Interchange*)  
+EDIは専用のネットワークで情報を交換するが、Web - EDIはインターネット技術を用いた企業間商取引を表す。SSLやVPNなどの技術を使用することで、安全性を保ちつつ専用線を用いるよりコストダウンができる利点がある
+
+- バーチャルカンパニー  
+事務所をもたずにインターネット上で活動を行う企業形態
