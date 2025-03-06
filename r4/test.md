@@ -1014,7 +1014,7 @@ VPN(*Virtual Private Network*)の説明
 せっけいも含めて受託するODM(*Original Design Manufacturer*)の説明
 
 - 自社内で回路設計から製造まで全ての設備をもち、自社ブランド製品を販売する  
-垂直統合型デバイスメーカー(*Integrated Device Manufacturer*)の説明
+垂直統合型デバイスメーカ(*Integrated Device Manufacturer*)の説明
 
 ---
 66.M&Aの説明
