@@ -1787,7 +1787,7 @@ PDPC(*Process Decision Program Chart*)を説明したもの
 半導体チップの製造を専門的に請け負うファウンドリ企業の説明
 
 - 自社で設計し、自社工場で生産した製品を相手先ブランドで納入する  
-せっけいも含めて受託するODM(*Original Design Manufacturer*)の説明
+設計も含めて受託するODM(*Original Design Manufacturer*)の説明
 
 - 自社内で回路設計から製造まで全ての設備をもち、自社ブランド製品を販売する  
 垂直統合型デバイスメーカ(*Integrated Device Manufacturer*)の説明
@@ -1812,3 +1812,5 @@ SOHO(*Small Office Home Office*)などのワークスタイルを説明したも
 
 - モバイルコンピューティング、ホームネットワークなどによって、個人がシームレスにコンピュータを利用できる環境  
 ユビキタスコンピューティングの説明
+
+---
