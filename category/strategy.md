@@ -1,5 +1,11 @@
 ### ランダム ストラテジ系
 
+- マネジメント系  
+https://github.com/I-Kouta/FE/blob/main/category/management.md
+
+- テクノロジ系  
+https://github.com/I-Kouta/FE/blob/main/category/technology.md
+
 ---
 製品X, Yを生産するために2種類の原料A, Bが必要である。製品1個の生産に必要となる原料の量と調達可能量は表の通り。製品X, Yの1個当たりの販売利益が、それぞれ100円, 150円であるときの最大利益
 

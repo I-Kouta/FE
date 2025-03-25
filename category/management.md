@@ -1,5 +1,11 @@
 ### ランダム マネジメント系
 
+- ストラテジ系  
+https://github.com/I-Kouta/FE/blob/main/category/strategy.md
+
+- テクノロジ系  
+https://github.com/I-Kouta/FE/blob/main/category/technology.md
+
 ---
 ITサービスマネジメントにおける問題管理プロセスにおいて実施すること
 
