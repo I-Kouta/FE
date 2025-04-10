@@ -7,6 +7,14 @@ https://github.com/I-Kouta/FE/blob/main/category/management.md
 https://github.com/I-Kouta/FE/blob/main/category/technology.md
 
 ---
+図中の矢印に記した数値は各区間の運賃を表す。出発地から目的地までの経路のうち、最も安い総運賃
+
+<img width="500" alt="" src="./images/運賃.png">
+
+- A.**20**  
+出発地 → 2 → 6 → 8 → 目的地、5 + 5 + 3 + 7が最も安くなる
+
+---
 A社とB社がそれぞれ2種類の戦略を採る場合の利得が表のように予想される時、両社がそれぞれのマキシミン戦略を採った場合のA社の利得はどれか。表の各欄において、左側の数値がA社の利得、右側の数値がB社の利得とする
 
 <img width="400" alt="" src="./images/マキシミン戦略.png">
