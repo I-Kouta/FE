@@ -914,12 +914,6 @@ select S_CODE, S_NAME, BU_NAME from BUSHO, SHAIN where `a`
 プログラマが1人以上5人未満の部署コードは抽出されるが、0人の部署はwhere句の条件に合致せず抽出されない
 
 ---
-50.更新不可能なビュー
-
-- A.**ビュー定義に`group by`句が含まれるビュー**  
-実表に対して実表の行を挿入、更新、削除することができないビューでのこと。集約関数(avg, count, sum, min max)・2つ以上の表の結合・`group by`, `order by`, `model`, `connect by`, `start with`, `distinct`の各句、select構文のリストにコレクション式、(副問合せ)、`with read only`が指定された副問合せでは更新不可能
-
----
 53.カーソル操作に関する記述
 
 - A.**プログラム言語は通常レコード単位の処理を行うのに対し、SQLでは集合単位の処理を行うので、その間をカーソルによって橋渡しする**  
