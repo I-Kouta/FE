@@ -774,8 +774,23 @@ CPUが1sに実行できる命令数を100万回単位で表した指標
 
 - A.**ビュー定義に`group by`句が含まれるビュー**  
 実表に対して実表の行を挿入、更新、削除することができないビューでのこと。下記条件を満たしていると更新不可能  
-集約関数(avg, count, sum, min max)  
+集約関数(avg, count, sum, min, max)  
 2つ以上の表の結合  
 `group by`, `order by`, `model`, `connect by`, `start with`, `distinct`の各句  
 select構文のリストにコレクション式, 副問合せ  
 `with read only`が指定された副問合せ
+
+---
+Webサーバにおいて、クライアントからの要求に応じてアプリケーションプログラムを実行して、その結果をWebブラウザに返すなどのインタラクティブなページを実現するために、Webサーバと外部プログラムを連携させる仕組み
+
+- A.**CGI**(*Common Gateway Interface*)  
+ユーザの入力した情報によって表示するWebページを変化させるなど、動的なWebページを作成するための仕組み。どのプログラム言語を用いても作成できるが、実際はPHPやPerlが多用されている
+
+- HTML(*Hyper Text Markup Language*)  
+Web上のドキュメントを記述するためのマークアップ言語
+
+- MIME(*Multipurpose Internet Mail Extension*)  
+ASCII文字しか使用できないSMTPを利用したメールで、日本語の2バイトコードや画像データを送信するための仕組み
+
+- URL(*Uniform Resource Locator*)  
+インターネット上のリソースを特定するための形式的な記号の並びで、Webサイトの場合はホームページアドレスとも呼ばれる
