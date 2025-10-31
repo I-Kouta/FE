@@ -473,6 +473,21 @@ DBMS(*DataBase Management System*)の機能
 DNS(*Domain Name System*)の機能
 
 ---
+Webサービスを利用する時のSOAPの役割
+
+- A.**Webサービスの送受信プログラム間で、 XML形式のメッセージを受け渡す**  
+ソフトウェア同士がメッセージを交換する遠隔手続き呼び出し(RPC)のためのプロトコル。汎用なデータ形式であるXMLに基づいて記述されており、Webサービスにとって有効な手段の1つ。Webサービスの場合、ソフトウェアが商品データを要求する時にXML形式であるSOAPリクエストを発行し、Webサービス側からも要求に基づいて商品データがSOAPメッセージとして返ってくる
+
+- Webサービスのインタフェースを記述して、プログラムからサービスを利用できるようにする  
+WSDL(*Web Services Description Language*)の説明
+
+- Webサービスの情報を登録しておき、利用者がそのサービスを検索できるようにする  
+UDDI(*Universal Description, Discovery and Integration*)の説明
+
+- Webサービスプログラム間の配信保証や重複防止など、データ転送の信頼性を確保する  
+WS - RM(*Web Services - ReliableMessaging*)の説明
+
+---
 クライアントサーバシステムにおいて、利用頻度の高い命令群をあらかじめサーバ上のDBMSに格納しておくことによって、クライアントサーバ間のネットワーク負荷を軽減する仕組み
 
 - A.**ストアドプロシージャ(*Stored Procedure*)**  
