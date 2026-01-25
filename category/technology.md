@@ -631,6 +631,16 @@ $=\overline{\overline{A*B}} + \overline{\overline{C*D}}$
 $=A*B+C*D$
 
 ---
+図の論理回路において、A = 1, B = 0, C = 1の時のP, Q, Rの適切な組み合わせはどれか。and回路はPを出力、or回路はQを出力、not回路はRを出力している
+
+<img width="400" alt="" src="./images/論理回路.png">
+
+- A.**P = 0, Q = 1, R = 0**  
+1 and 0なので、Pは0  
+0 or  1なので、Qは1  
+not 1なので、Rは0
+
+---
 1桁の2進数x, yを加算して、z(和の1桁目)及びc(桁上げ)を出力する半加算器において、A, Bの素子の組み合わせ
 
 <img width="400" alt="" src="./images/半加算器.png">
