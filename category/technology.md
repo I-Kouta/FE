@@ -136,6 +136,34 @@ $k=-1$を代入すると$m=22768$(余剰)となる
 `00101000` OR `00001111` -> `00101111`(片方でも1なら1)
 
 ---
+x, y, xを論理変数、Tを真、Fを偽とする時、次の真理値表で示される関数$f(x, y, x)$を表す論理式はどれか。$\cap$は論理積，$\cup$は論理和，$\overline A$はAの否定を表す
+
+|x|y|z|$f(x, y, z)$|
+|-|-|-|------------|
+|T|T|T|T|
+|T|T|F|T|
+|T|F|F|T|
+|T|F|F|F|
+|F|T|T|F|
+|F|T|F|F|
+|F|F|T|T|
+|F|F|F|F|
+
+- A.**$(x\cap y)\cup(\overline y\cap z)$**  
+{x, y, x} = {T, F, T}の場合、F or TでT  
+{x, y, x} = {F, F, F}の場合、F or FでF
+
+- $(x\cap \overline y)\cup(\overline y\cap \overline z)$  
+{x, y, x} = {T, F, T}の場合、T or FでT  
+{x, y, x} = {F, F, F}の場合、F or Tとなり誤り
+
+- $(x\cap y)\cup(y\cap z)$  
+{x, y, x} = {T, F, T}の場合、F or Fとなり誤り
+
+- $(x\cap y)\cup(\overline y\cap \overline z)$  
+{x, y, x} = {T, F, T}の場合、F or Fとなり誤り
+
+---
 ハッシュ表探索において、同一のハッシュ値となる確率が最も低くなるのは、ハッシュ値がどの分布で近似される時か
 
 - A.**一様分布**  
