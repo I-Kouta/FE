@@ -203,6 +203,38 @@ x, y, xを論理変数、Tを真、Fを偽とする時、次の真理値表で�
 {x, y, x} = {T, F, T}の場合、F or Fとなり誤り
 
 ---
+次のベン図の網掛け部分の集合を表す指揮はどれか。X $\cup$ Yはそれぞれの和集合、X $\cap$ Yは積集合、$\overline X$は補集合を表す
+
+<img width="300" alt="" src="./images/ベン図.png">
+
+- A. $(\overline A \cap B \cap C)\cup(A \cap B \cap\overline C)$\
+BとCの共通部分でAを含まない部分(網掛け下部)と、AとBの共通部分でCを含まない部分(網掛け左部)の共通部分を示す
+
+- $\overline{A \cap B \cap C}\cap B$\
+AかつBかつCではない部分と、Bの共通部分を示す
+
+- $(A \cup B)\cap\overline C$\
+AまたはBだが、Cではない範囲を示す
+
+- $\overline{A \cup B \cup C}$\
+3つのいずれに該当しない範囲を示す
+
+---
+集合AとBについて、常に成立する関係はどれか。 $\cap$ は積集合、 $\cup$ は和集合 $\overline A$ はAの補集合、 $A \subseteq B$ はAはBの部分集合であることを表す
+
+- A.**$(A \cup B) \subseteq (A \cup \overline B)$**\
+右辺にAかつBの部分を含む
+
+- $A \subseteq (A \cap \overline B)$\
+AはAとBではない部分の共通部分の部分集合にはならない(左辺にBを含む)
+
+- $(A \cup B) \subseteq (\overline A \cup \overline B)$\
+AとBの全体はAとBの共通部分以外の部分集合にはならない(左辺に共通部分を含む)
+
+- $(A \cup B) \subseteq (\overline A \cap \overline B)$\
+AとBの共通部分はAでもBでもない部分の部分集合にはならない
+
+---
 ハッシュ表探索において、同一のハッシュ値となる確率が最も低くなるのは、ハッシュ値がどの分布で近似される時か
 
 - A.**一様分布**\
@@ -609,23 +641,6 @@ dpi(*dots per inch*)は、1インチの長さを何ピクセル(画素)で表現
 - 10円硬貨または50円硬貨が投入された
 - 10円硬貨または100円硬貨が投入された\
 状態 $Q_4$ から10円硬貨が投入されると、状態 $Q_5$に遷移する
-
----
-次のベン図の網掛け部分の集合を表す指揮はどれか。X $\cup$ Yはそれぞれの和集合、X $\cap$ Yは積集合、$\overline X$は補集合を表す
-
-<img width="300" alt="" src="./images/ベン図.png">
-
-- A. $(\overline A \cap B \cap C)\cup(A \cap B \cap\overline C)$\
-BとCの共通部分でAを含まない部分(網掛け下部)と、AとBの共通部分でCを含まない部分(網掛け左部)の共通部分を示す
-
-- $\overline{A \cap B \cap C}\cap B$\
-AかつBかつCではない部分と、Bの共通部分を示す
-
-- $(A \cup B)\cap\overline C$\
-AまたはBだが、Cではない範囲を示す
-
-- $\overline{A \cup B \cup C}$\
-3つのいずれに該当しない範囲を示す
 
 ---
 家庭用の100V電源で動作し、運転中に10Aの電流が流れる機器を、図のとおりに0分から120分まで運転した。この時消費する電力量はいくらか。電圧及び電流の値は実効値であり、停止時に電流は流れないものとする。また、力率は1とする
