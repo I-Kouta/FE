@@ -324,6 +324,25 @@ AとBの全体はAとBの共通部分以外の部分集合にはならない(左
 AとBの共通部分はAでもBでもない部分の部分集合にはならない
 
 ---
+集合A, B, Cを使った等式のうち、集合の内容によらず常に成立する等式
+
+- A.**$(A \cap C) \cup (B \cap C) = (A \cup B) \cap C$**\
+左辺 : CA共通部分とBC共通部分の全体なので、CA・BCの全体\
+右辺 : AB全体とCの共通部分なので、CA・BCの全体
+
+- $(A \cup B) \cap (A \cap C) = B \cap (A \cup C)$\
+左辺 : AB全体とAC共通部分の共通部分なので、CA共通部分\
+右辺 : BとAC全体の共通部分なので、AB・CBの共通部分
+
+- $(A \cup B) \cap C = (A \cup C) \cap (B \cup C)$\
+左辺 : AB共通部分とCの共通部分なので、BC、CAの共通部分\
+右辺 : AC全体とBC全体の共通部分なので、C全体とABの共通部分
+
+- $(A \cap C) \cup (B \cap A) = (A \cap B) \cup (B \cap C)$\
+左辺 : CA共通部分とBC共通部分の全体なので、AB・CAの全体\
+右辺 : AB共通部分とBC共通部分の全体なので、AB・BCの全体(分配の法則で分かる)
+
+---
 全体集合S内に異なる部分集合A, Bがある時、 $\overline{A} \cap \overline{B}$ に等しいものはどれか。 $\overline{A} \cup \overline{B}$ は和集合、 $\overline{A}$ はSにおけるAの補集合、A-BはAからBを除いた差集合を表す
 
 - A.**$\overline{A} - B$**\
